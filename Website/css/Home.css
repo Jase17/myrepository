@@ -1,0 +1,267 @@
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+}
+/*Set the properties for the navbar*/
+.navbar {
+    background-color: deepskyblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+/*Remove the bullet points from the list*/
+.nav-list {
+    list-style-type: none;
+}
+/*display list items side by side*/
+.nav-list .list-item {
+    display: inline-block;
+    margin: 50px;
+}
+/*Set the font colour and remove underlines*/
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: "Century Gothic";
+    font-weight: lighter;
+}
+/*Create hover effect*/
+.navbar a:hover {
+    color:black;
+    cursor: pointer;
+}
+/*Insert logo*/
+.primary-icon {
+    height: 120px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+/*Style for Welcome message*/
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+/*Set the font for the page body*/
+body {
+    font-family: "Century Gothic";
+
+}
+/*Set the properties for the footer*/
+footer {
+    background-color: deepskyblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+/*Slideshow container*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/*Hide the images by default*/
+.mySlides {
+    display: none;
+}
+/*Next & previous buttons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/*Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/*On hover, add a black background colour
+with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/*Caption text*/
+.text {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    align-items: center;
+    text-align: center;
+}
+/*Number text (1/6)*/
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/*The dots/bullets/indicators*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, dot:hover {
+    background-color: #717171;
+}
+/*Fading animation*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.about h1.head {
+    margin-bottom: 20px;
+}
+/*Position the about us message*/
+div.about {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+/*Position what the business delivers message*/
+.deliver {
+    margin-top: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    margin-bottom: 50px;
+}
+/*Position and shape staff photo*/
+.jason-photo {
+    height: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    float: left;
+}
+/*Position about staff section*/
+.team {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+
+}
+/*Divide the footer*/
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+    font-family: "Century Gothic";
+
+}
+/*Footer headings*/
+.container h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+/*Divide the footer columns equally*/
+.pages {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+/*Remove bullet points from the ul list and space
+the lists out*/
+.pages ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+/*Set the font colour and remove underlines*/
+.pages a {
+    color: white;
+    text-decoration: none;
+}
+/*Create hover effect.*/
+.pages a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*Divide the footer columns equally*/
+.policies {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+/*Remove bullet points from the ul list and space
+the lists out*/
+.policies ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+/*Set the font colour and remove underlines*/
+.policies a {
+    color: white;
+    text-decoration: none;
+}
+/*Create hover effect.*/
+.policies a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*Divide the footer columns equally*/
+.socials {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+/*Remove bullet points from the ul list and space
+the lists out*/
+.socials ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+/*Set the font colour and remove underlines*/
+.socials a {
+    color: white;
+    text-decoration: none;
+}
+/*Create hover effect.*/
+.socials a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*Style copyright info*/
+.copyright {
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Century Gothic";
+}
+/*position logo*/
+.primary-icon {
+    height: 120px;
+    margin-left: 60px;
+    margin-top: 10px;
+}

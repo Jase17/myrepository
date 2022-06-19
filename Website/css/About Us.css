@@ -1,0 +1,286 @@
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+}
+/*Set the properties for the navbar*/
+.navbar {
+    background-color: deepskyblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+/*Remove the bullet points from the list*/
+.nav-list {
+    list-style-type: none;
+
+}
+/*display list items side by side*/
+.nav-list .list-item {
+    display: inline-block;
+    margin: 50px;
+}
+/*Set the font colour and remove underlines*/
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: "Century Gothic";
+    font-weight: lighter;
+
+}
+/*Create hover effect*/
+.navbar a:hover {
+    color:black;
+    cursor: pointer;
+}
+/*Insert logo*/
+.primary-icon {
+    height: 120px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+/*Set the font for the page body*/
+body {
+    font-family: "Century Gothic";
+}
+/*Creat space between Who are we? and paragraph*/
+.about h1.head {
+margin-bottom: 20px;
+}
+/*Position about section*/
+.about {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+/*Position what the business delivers section*/
+.deliver {
+    margin-top: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+/*Position staff photo*/
+.jason-photo {
+    height: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    float: left;
+}
+/*position about staff section*/
+.team {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+/*Position google maps location*/
+div.location {
+    float: right;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+/*Position We are Here title*/
+div.location h2 {
+    margin-bottom: 20px;
+}
+/*Position contact details*/
+.contact {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+/*Position contact title*/
+.contact h2 {
+    margin-bottom: 20px;
+}
+/*Position the send a message form*/
+form {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/*Position the send a message title*/
+form h2 {
+    margin-bottom: 20px;
+}
+/*Style first name form*/
+.first-name input#fnameID {
+    width: 15%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+/*Style first name form*/
+.last-name input#lnameID {
+    width: 15%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+/*Style phone number form*/
+.phone-number input#phID {
+    width: 15%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+/*Style email form*/
+.email input#emailID {
+    width: 15%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+/*Style message form*/
+.message textarea#query_text {
+    width: 15%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+    font-family: Calibri;
+}
+/*Style submit button*/
+button.submit-button{
+    width: 5%;
+    background-color: green;
+    color: white;
+    padding: 8px 0px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*Style reset button*/
+button.reset-button{
+    width: 5%;
+    background-color: red;
+    color: white;
+    padding: 8px 0px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*Create hover effect*/
+button.submit-button:hover {
+    background-color: lightgreen;
+}
+/*Create hover effect*/
+button.reset-button:hover {
+    background-color: lightcoral;
+}
+/*Set the properties for the footer*/
+footer {
+    background-color: deepskyblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+/*Divide the footer*/
+.container {
+    display: flex;
+    gap: 0px;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+    font-family: "Century Gothic";
+
+}
+/*Footer headings*/
+.container h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+/*Divide the footer columns equally*/
+.pages {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+/*Remove bullet points from the ul list and space
+the lists out*/
+.pages ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+/*Set the font colour and remove underlines*/
+.pages a {
+    color: white;
+    text-decoration: none;
+}
+/*Create hover effect.*/
+.pages a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*Divide the footer columns equally*/
+.policies {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+/*Remove bullet points from the ul list and space
+the lists out*/
+.policies ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+/*Set the font colour and remove underlines*/
+.policies a {
+    color: white;
+    text-decoration: none;
+}
+/*Create hover effect.*/
+.policies a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*Divide the footer columns equally*/
+.socials {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+/*Remove bullet points from the ul list and space
+the lists out*/
+.socials ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+/*Set the font colour and remove underlines*/
+.socials a {
+    color: white;
+    text-decoration: none;
+}
+/*Create hover effect.*/
+.socials a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*Style copyright info*/
+.copyright {
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Century Gothic";
+}
+/*position logo*/
+.primary-icon {
+    height: 120px;
+    margin-left: 60px;
+    margin-top: 10px;
+}

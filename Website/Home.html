@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Taupo Adventure Limited</title> <!--Create name for page tab-->
+    <link link href="css/Home.css" type="text/css" rel="stylesheet"/> <!--Insert CSS file for page-->
+</head>
+<nav>
+    <script src="Header.js"></script> <!--Insert js header-->
+</nav>
+<body>
+<h1 class="heading">Welcome to Taupo Adventure Limited</h1> <!--Create a welcome title-->
+
+<div class="slideshow-container"> <!--Setup the slideshow container-->
+
+<div class="mySlides fade"> <!--Setup the what images, text etc are going to be in the slideshow.-->
+    <div class="numbertext">1 / 6</div>
+    <img src="Web%20photos/Skydiving.jpg" style="width:1000px;height:600px">
+    <div class="text">Skydiving</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="Web%20photos/Geothermal.jpg" style="width:1000px;height:600px">
+    <div class="text">Geothermal Pools</div>
+</div>
+
+<div class="mySlides fade">
+     <div class="numbertext">3 / 6</div>
+     <img src="Web%20photos/Hiking.jpg" style="width:1000px;height:600px">
+     <div class="text">Hiking</div>
+</div>
+
+<div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="Web%20photos/Fishing.jpg" style="width:1000px;height:600px">
+      <div class="text">Fishing</div>
+</div>
+
+<div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="Web%20photos/Kayaking.jpg" style="width:1000px;height:600px">
+      <div class="text">Kayaking</div>
+</div>
+
+<div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+        <img src="Web%20photos/Biking.jpg" style="width:1000px;height:600px">
+        <div class="text">Biking</div>
+</div>
+
+<!-- Create the Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--Create button for moving one slide back, link to plusSlides js function.-->
+<a class="next" onclick="plusSlides(1)">&#10095;</a> <!--Create button for moving one slide back, link to plusSlides  js function.-->
+</div>
+<br>
+
+<!--Setup the indicator dots to show where you are in the slideshow -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+
+</div>
+<div class="about">
+    <h1 class="head">Who are we?</h1><!--Information about the business-->
+    <p>Since 2004, the award-winning Taupo Adventure Limited has provided adrenaline filled activities around beautiful Lake Taupo
+        ranging from 15000ft skydives to trips to the geothermal hot pools, Taupo Adventure Limited prides itself on entertaining tourists
+        both domestically and internationally while maintaining their safety as much as possible.</p>
+    <div class="deliver">
+        <h3>We deliver these six activities:</h3><br><!--What the business delivers-->
+        <ul>
+            <li>Skydiving</li>
+            <li>Geothermal Pools</li>
+            <li>Hiking</li>
+            <li>Fishing</li>
+            <li>Kayaking</li>
+            <li>Biking</li>
+        </ul>
+    </div>
+</div>
+<div class="team"><!--Section showing all staff.-->
+    <img class="jason-photo" src="jason photo.JPG"></a>
+    <p><strong>Jason</strong></p>
+    <p>Born and bred in Taupo, Jason has years of experience in skydiving, biking, hiking and fishing as well as providing excellent customer service.
+        Jason is also a four-time winner of the UCI Mountain Bike Championship and three-time winner of the tour de France.</p>
+</div>
+<br>
+<script src="js/slideshow.js"></script> <!--Insert js content for slideshow-->
+</body>
+<footer>
+    <script src="Footer.js"></script> <!--Insert js footer-->
+</footer>
+</html>

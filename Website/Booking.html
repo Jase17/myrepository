@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link link href="css/booking.css" type="text/css" rel="stylesheet"/> <!--Insert CSS file for page-->
+    <title>Booking - Taupo Adventure Limited</title> <!--Create name for page tab-->
+</head>
+<nav>
+    <script src="Header.js"></script><!--Insert header-->
+</nav>
+<script src="js/booking.js"></script><!--Insert js for booking validation and price calculation.-->
+<body>
+
+<div class="booking-details"><!--Create a form for customer to fill out booking info-->
+    <form>
+    <div class="first-name">
+        <label for="fnameID">First Name</label><br>
+        <input type="text" id="fnameID" name="firstname">
+    </div>
+    <div class="last-name">
+        <label for="lnameID">Last Name</label><br>
+        <input type="text" id="lnameID" name="lastname">
+    </div>
+    <div class="phone-number">
+        <label for="phID">Phone Number</label><br>
+        <input type="tel" id="phID" name="phonenumber">
+    </div>
+    <div class="email">
+        <label for="emailID">Email</label><br>
+        <input type="email" id="emailID" name="emailaddress">
+    </div>
+    <div class="person-qty">
+    <label for="pnum">Number of People</label><br>
+    <input type="number" id="pnum" name="pnum">
+    </div>
+    <div class="activity"> <!--Show dropdown list to choose activity-->
+        <label for="activities">Choose an activity</label><br>
+        <select name="activities" id="activities">
+            <option value="select">-- Select --</option>
+            <option value="Skydiving">Skydiving</option>
+            <option value="Hiking">Hiking</option>
+            <option value="Kayaking">Kayaking</option>
+            <option value="Geothermal Pools">Geothermal Pools</option>
+            <option value="Fishing on Lake Taupo">Fishing on Lake Taupo</option>
+            <option value="Biking">Biking</option>
+        </select>
+    </div>
+    <div class="date">
+        <label for="bookdate">Date</label><br>
+        <input type="date" id="bookdate" name="bookdate">
+    </div>
+    <br>
+    <div class="price-button">
+        <button type="button" onclick="price()">Price</button><!--Use js to calculate price-->
+    </div>
+    <div class="price-display">
+        <label for="total">Total Price ($)</label><br>
+        <input type="number" id="total">
+    </div>
+    </form>
+</div>
+<div class="payment"><!--Create form for customer to fill out card details-->
+    <div class="card-name">
+        <label for="cnameID">Card Name</label><br>
+        <input type="text" id="cnameID" name="cardname">
+    </div>
+    <div class="card-number">
+        <label for="cardID">Card Number</label><br>
+        <input type="number" id="cardID" name="cardnumber">
+    </div>
+    <div class="card-date">
+        <label for="expiryDate">Expiry Date</label><br>
+        <input type="month" id="expiryDate" name="cardexpiriry">
+    </div>
+    <div class="card-cvv">
+        <label for="CvvID">CVV</label><br>
+        <input type="text" id="CvvID" name="cardcvv"><br><br>
+    </div>
+    <div class="check-box">
+        <input type="checkbox" id="userAgreed"
+               name="userAgreed" value="agree">
+        <label for="userAgreed">I agree to the terms and conditions</label><br>
+    </div>
+
+    <div class="buttons">
+    <br><button class="submit-button" onclick="validateform()">Submit</button><!--Use js to validate the form-->
+        <button class="reset-button" onclick="resetform()">Reset</button><!--Use js to reset the form-->
+        </form>
+    </div>
+</div>
+</body>
+<footer>
+    <script src="Footer.js"></script><!--Insert footer-->
+</footer>
+</html>
